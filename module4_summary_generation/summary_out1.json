@@ -1,0 +1,46 @@
+{
+  "meeting_id": "M20250806-1343",
+  "date": "2025-08-06",
+  "duration_minutes": 25,
+  "participants": [
+    "spk_0",
+    "spk_1",
+    "spk_2"
+  ],
+  "summary": "As you are well aware, in view of the massive outbreak of global pandemic of COVID-19, social distancing is the norm to be followed, and hence the government of India, that is Ministry of Corporate Affairs has allowed the companies to conduct their meeting through video conferencing.\nWithin a span of 19 years of races, with a new and innovative concept in the history of telecommunication, the company has achieved its grand success by a wide range of operations in telecom technology and fintech in the domestic and international markets.\nAnd with the permission of members, we are taking the notice of 19th annual general meeting as circulated to the members of the company electronically as red.\nNow, may I please take this opportunity to proceed further with the business items as mentioned in the notice of AGM for the consideration of the respected members of the company.\nAnd now, since no other matters left to transact, I convey my sincere thanks to the directors and members of the company for sparing the available time for attending this 19th AGM of the company.",
+  "action_items": [
+    "No clear action items found in transcript."
+  ],
+  "decisions": [
+    "No clear decisions found in transcript."
+  ],
+  "segments": [
+    {
+      "speaker": "spk_0",
+      "start": 0,
+      "end": 300
+    },
+    {
+      "speaker": "spk_1",
+      "start": 300,
+      "end": 700
+    },
+    {
+      "speaker": "spk_2",
+      "start": 700,
+      "end": 1000
+    }
+  ],
+  "speaker_stats": {
+    "spk_0": 5.0,
+    "spk_1": 6.67,
+    "spk_2": 5.0
+  },
+  "keywords": {
+    "company": 5,
+    "members": 4,
+    "has": 2,
+    "meeting": 2,
+    "notice": 2
+  }
+}

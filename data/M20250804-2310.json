@@ -1,0 +1,40 @@
+{
+  "meeting_id": "M20250804-2310",
+  "date": "2025-08-04",
+  "duration_minutes": 5,
+  "participants": [
+    "spk_0",
+    "spk_1"
+  ],
+  "summary": "This is a mock summary generated after uploading the file.",
+  "action_items": [
+    "Finalize report",
+    "Send follow-up email"
+  ],
+  "decisions": [
+    "Move to next sprint"
+  ],
+  "segments": [
+    {
+      "speaker": "spk_0",
+      "start": 0,
+      "end": 60
+    },
+    {
+      "speaker": "spk_1",
+      "start": 60,
+      "end": 180
+    }
+  ],
+  "speaker_stats": {
+    "spk_0": 1.0,
+    "spk_1": 2.0
+  },
+  "keywords": {
+    "mock": 1,
+    "summary": 1,
+    "generated": 1,
+    "after": 1,
+    "uploading": 1
+  }
+}

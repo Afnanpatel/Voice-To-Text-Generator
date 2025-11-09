@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice to Text Generator - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header { background: linear-gradient(to right, #007bff, #00c6ff); color: white; padding: 20px; border-radius: 10px; margin-bottom: 30px; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0px 6px 20px rgba(0,0,0,0.1); transition: 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-light">
+
+<div class="container py-4">
+    <div class="header text-center">
+        <h1 class="fw-bold">Voice to Text Generator</h1>
+        <p class="mb-0">View and manage meeting summaries</p>
+    </div>
+
+    <!-- Upload Form -->
+    <div class="mb-4">
+        <form method="post" action="{{ url_for('upload') }}" enctype="multipart/form-data" class="d-flex align-items-center gap-2">
+            <input type="file" name="audio_file" accept=".mp3,.mp4" required class="form-control">
+            <button type="submit" class="btn btn-success">Upload</button>
+        </form>
+    </div>
+
+    <!-- Search -->
+    <form method="get" action="/" class="mb-4">
+        <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search by keyword, date, or speaker">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </form>
+
+    <!-- Recent Searches -->
+    {% if recent_searches %}
+    <div class="mb-4 d-flex justify-content-between align-items-center">
+        <h5 class="text-secondary">Recent Searches:</h5>
+        <a href="{{ url_for('clear_searches') }}" class="btn btn-sm btn-outline-danger">Clear</a>
+    </div>
+    <ul class="list-inline">
+        {% for search in recent_searches %}
+        <li class="list-inline-item badge bg-secondary">{{ search }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <!-- Meeting Cards -->
+    <div class="row">
+        {% for m in meetings %}
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">{{ m.meeting_id }}</h5>
+                    <p class="card-text"><strong>Date:</strong> {{ m.date }}</p>
+                    <p class="card-text"><strong>Duration:</strong> {{ m.duration_minutes }} mins</p>
+                    <p class="card-text">{{ m.summary[:120] }}...</p>
+                    <a href="{{ url_for('meeting_detail', filename=m.file_name) }}" class="btn btn-outline-primary btn-sm">View Details</a>
+                    <a href="{{ url_for('delete_meeting', filename=m.file_name) }}" class="btn btn-outline-danger btn-sm">Delete</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

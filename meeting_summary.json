@@ -1,0 +1,22 @@
+{
+  "meeting_id": "M20250806-1337",
+  "date": "2025-08-06",
+  "duration_minutes": 10,
+  "participants": [
+    "spk_0",
+    "spk_1"
+  ],
+  "summary": "Who happens to be a member of the company? Thank you very much. Thank you. Thank you.",
+  "action_items": [
+    "Uh, I will party legal head in compliance.",
+    "May I please take this opportunity to invite Mr. Bankkim Nambert to deliver his chairman's speech and begin the proceedings.",
+    "As a responsible and caring organization, we have looked at ways and means to help the government and help the communities around us in the basement.",
+    "Further the compliance with provision to Section 108 of Companies Act 2013 and relevant rules made there under SAILODR regulations 2015 and related circulars issued by MCA voting will be done through show of hands."
+  ],
+  "decisions": [],
+  "metadata": {
+    "generated_at": "2025-08-06T13:37:31.427205",
+    "transcript_file": "clean_transcript.json",
+    "total_segments": 5
+  }
+}

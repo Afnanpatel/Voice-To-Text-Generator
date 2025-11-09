@@ -1,0 +1,42 @@
+{
+  "meeting_id": "M20250804-2307",
+  "date": "2025-08-04",
+  "duration_minutes": 25,
+  "participants": [
+    "spk_0",
+    "spk_1",
+    "spk_2"
+  ],
+  "summary": "Follow Learning English vocabulary in your podcast app to find the latest episodes of English in a minute and more programs to improve your English.\nIt's a verb and a noun, and you can say it as schedule or schedule.\nAs a noun, it can be a plan or a list of when things happen.\nA schedule can tell you when planes, trains, and buses are planned to arrive at and depart from different places.\nAs a verb, schedule means to plan for something to happen at a certain time.",
+  "action_items": [],
+  "decisions": [],
+  "segments": [
+    {
+      "speaker": "spk_0",
+      "start": 0,
+      "end": 300
+    },
+    {
+      "speaker": "spk_1",
+      "start": 300,
+      "end": 700
+    },
+    {
+      "speaker": "spk_2",
+      "start": 700,
+      "end": 1000
+    }
+  ],
+  "speaker_stats": {
+    "spk_0": 5.0,
+    "spk_1": 6.67,
+    "spk_2": 5.0
+  },
+  "keywords": {
+    "schedule": 4,
+    "english": 3,
+    "your": 2,
+    "verb": 2,
+    "noun": 2
+  }
+}
